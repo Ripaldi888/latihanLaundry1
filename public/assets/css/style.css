@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0;
+    
+}
+.header{
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    z-index: 10;
+    justify-content: space-between;
+    box-shadow: 0px 3px 23px -6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 23px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 23px -6px rgba(0,0,0,0.75);
+/* transform: translateY(1rem); */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width: 5rem;
+    margin: 1rem 0 1rem 4rem;
+}
+.logo p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+nav{
+    padding: 6px 0 6px 0;
+    top: 0;
+    z-index: 5;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+}
+nav ul li {
+    margin: 0 25px 0 25px;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+nav ul li a {
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+}
+.background {
+    background: transparent;
+    background-image: url(../img/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transform: translateY(-20px);
+    height: 25rem;
+    filter: brightness(60%);
+    z-index: -1;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    z-index: 1; 
+}
+.content h1 {
+    font-size: 70px;
+    font-weight: 900;
+}
+.pesanan-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto; 
+}
+.pesanan-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.pesanan-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+.pesanan-highlight {
+    color: #000000;
+}
+.pesanan-description {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.pesanan-input-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.pesanan-input-wrapper input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.pesanan-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    background: #ddd;
+    color: #aaa;
+    font-size: 18px;
+    cursor: not-allowed;
+}
+footer {
+    background: #808080; 
+    padding: 20px 0;
+    text-align: center;
+    font-size: 17px;
+    color: #333;
+}
+.footer-text {
+    margin-bottom: 10px;
+    color:#fff;
+    font-weight: 600;
+}
+.copyright {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}

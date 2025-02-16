@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/image.png);
+    
+}
+
+.box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    width: 350px;
+}
+
+.logo img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.head-login a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+
+.input-box {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #000000;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+
+
+.input-box .material-symbols-outlined {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 20px;
+}
+
+.login {
+    margin-top: 20px;
+}
+
+.tombol {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background: #0056b3;
+}

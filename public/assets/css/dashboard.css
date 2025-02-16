@@ -1,0 +1,49 @@
+/* *{
+    border: 1px solid red;
+} */
+
+
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar li img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.li-gambar {
+    position: absolute;
+    bottom: 0;
+}
+
+
+.sidebar ul li:hover {
+    background: #34495e;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
