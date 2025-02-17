@@ -19,7 +19,11 @@
             <ul class="nav flex-column">
                 <li class="nav-item"><a href="" class="nav-link  text-white">Input</a></li>
                 <li class="nav-item"><a href="" class="nav-link  text-white">Data</a></li>
-                <li class="nav-item"><a href="" class="nav-link  text-white">Logout</a></li>
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button class="nav-link bg-transparent border-0 p-0 ms-3 text-white">{{ __('Log Out') }}
+                    </button>
+                </form>
                 <li class="nav-item li-gambar ms-2"><img src="{{ asset('assets/img/tes.jpeg') }}" alt="">Admin
                 </li>
             </ul>

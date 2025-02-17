@@ -22,7 +22,7 @@ Route::middleware('auth')->group(function () {
 
 
 
-Route::middleware(['role:admin'])->group(function () {
+Route::middleware(['auth','role:admin'])->group(function () {
 
     Route::get('/admin',[AdminController::class,'index'])->name('admin');
     Route::get('/input',[AdminController::class,'create'])->name('create');
@@ -32,7 +32,7 @@ Route::middleware(['role:admin'])->group(function () {
     Route::delete('/delete/{id}',[AdminController::class,'destroy'])->name('delete');
 });
 
-Route::middleware(['role:owner'])->group(function () {
+Route::middleware(['auth','role:owner'])->group(function () {
     Route::get('/home/owner',[AdminController::class,'owner'])->name('home.owner');
     Route::get('/search/date',[AdminController::class,'searchDate'])->name('search.date');
 });
